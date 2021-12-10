@@ -594,6 +594,7 @@ angular.module('ui.mask', [])
                                 }
 
                                 if (isKeyBackspace && preventBackspace) {
+                                    preventBackspace = false;
                                     iElement.val(maskPlaceholder);
                                     // This shouldn't be needed but for some reason after aggressive backspacing the controller $viewValue is incorrect.
                                     // This keeps the $viewValue updated and correct.
